@@ -1,0 +1,2290 @@
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	width: 1535px;
+	/* padding: 100px; */
+}
+/* ------------------------------ */
+
+/* .footer__container {
+	max-width: 1020px;
+	margin: 0 auto;
+} */
+
+.christmas {
+	width: 100%;
+	/* width: 1500px;
+	height: 720px; */
+	min-height: 720px;
+	/* border: 5px solid #4b999b; */
+	position: relative;
+}
+
+/* CHRISTMAS CAR*/
+
+.christmas__element-one {
+	position: absolute;
+	top: 210px;
+	left: 1400px;
+	/* top: 150px;
+	left: 800px; */
+	transform: scale(0.7) rotate(10.5deg);
+	/* transform-origin: 50% 90%; */
+	z-index: 30;
+	animation: car 40s linear 1 normal 0s forwards;
+}
+
+@keyframes car {
+	2.5% {
+		transform: scale(0.7) rotate(10deg);
+		top: 205px;
+	}
+	5% {
+		transform: scale(0.7) rotate(9.5deg);
+		top: 195px;
+	}
+	10% {
+		transform: scale(0.7) rotate(9deg);
+		top: 185px;
+	}
+	15% {
+		transform: scale(0.7) rotate(8.5deg);
+		top: 175px;
+	}
+	20% {
+		transform: scale(0.7) rotate(7.5deg);
+		top: 165px;
+	}
+	25% {
+		transform: scale(0.7) rotate(6.2deg);
+		top: 155px;
+	}
+	30% {
+		transform: scale(0.7) rotate(5deg);
+		top: 145px;
+	}
+
+	35% {
+		transform: scale(0.7) rotate(3.5deg);
+		top: 135px;
+	}
+	40% {
+		transform: scale(0.7) rotate(1.5deg);
+		top: 125px;
+	}
+	45% {
+		transform: scale(0.7) rotate(0.5deg);
+		top: 120px;
+	}
+	47.5% {
+		transform: scale(0.7) rotate(0deg);
+		top: 120px;
+	}
+	50% {
+		transform: scale(0.7) rotate(0deg);
+		top: 122px;
+	}
+	52.5% {
+		transform: scale(0.7) rotate(-0.5deg);
+		top: 120px;
+	}
+	55% {
+		transform: scale(0.7) rotate(-1.5deg);
+		top: 120px;
+	}
+	60% {
+		transform: scale(0.7) rotate(-3deg);
+		top: 125px;
+	}
+	65% {
+		transform: scale(0.7) rotate(-4deg);
+		top: 135px;
+	}
+	70% {
+		transform: scale(0.7) rotate(-4.5deg);
+		top: 145px;
+	}
+	75% {
+		transform: scale(0.7) rotate(-5.5deg);
+		top: 155px;
+	}
+	80% {
+		transform: scale(0.7) rotate(-6.5deg);
+		top: 165px;
+	}
+	85% {
+		transform: scale(0.7) rotate(-7.5deg);
+		top: 175px;
+	}
+	90% {
+		transform: scale(0.7) rotate(-10deg);
+		top: 190px;
+	}
+	95% {
+		transform: scale(0.7) rotate(-11deg);
+		top: 200px;
+	}
+	97.5% {
+		transform: scale(0.7) rotate(-14deg);
+		top: 210px;
+	}
+	100% {
+		transform: scale(0.7) rotate(-15deg);
+		top: 215px;
+		left: -575px;
+	}
+}
+
+.dog-in-car {
+	width: 650px;
+	height: 590px;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+/* ЛЕНТА*/
+
+.dog-in-car__detail-decor {
+	position: absolute;
+	top: 40px;
+	left: 194px;
+	/* z-index: 15; */
+}
+
+.tape {
+	width: 300px;
+	height: 490px;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+.tape__vertical {
+	position: absolute;
+	top: 92.5px;
+	left: 40px;
+	width: 200px;
+	height: 386px;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+	overflow: hidden;
+	z-index: 15;
+}
+
+.tape__item {
+	position: absolute;
+	top: -350px;
+	left: -705px;
+	width: 800px;
+	height: 1000px;
+	border-radius: 50%;
+	transform: rotate(-40deg);
+	border: 10px solid #fe8a11;
+}
+
+.tape__bow {
+	z-index: 17;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 400px;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+.tape__circle {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border: 5px solid #fe8a11;
+}
+
+.tape__circle_one {
+	top: 190px;
+	left: -15px;
+	border-radius: 50% 50% 0 50%;
+	transform: rotate(-50deg);
+}
+
+.tape__circle_two {
+	top: 152px;
+	left: 194px;
+	border-radius: 50% 50% 50% 0;
+	transform: rotate(30deg);
+}
+
+.tape__mini {
+	position: absolute;
+	width: 5px;
+	height: 200px;
+	border-radius: 5px;
+	background-color: #fe8a11;
+}
+
+.tape__mini_one {
+	top: 250px;
+	left: 198px;
+	transform: rotate(-20deg);
+}
+
+.tape__mini_two {
+	height: 250px;
+	top: 250px;
+	left: 193px;
+	transform: rotate(-13deg);
+}
+
+/* ________________________________________________________________ЛЕНТА*/
+
+/* CHRISTMAS TREE*/
+
+.dog-in-car__detail-tree {
+	position: absolute;
+	top: 65px;
+	left: 120px;
+	transform: rotate(-12deg);
+	z-index: 10;
+}
+
+.christmas-tree {
+	width: 450px;
+	height: 230px;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+.christmas-tree__body {
+	width: 375px;
+	height: 230px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+	z-index: 2;
+}
+
+.christmas-tree__item-one {
+	position: absolute;
+	top: 0px;
+	left: 175px;
+	width: 500px;
+	height: 90px;
+	/* z-index: 3; */
+	background-color: #39743a;
+	transform: rotate(-15deg) skew(80deg);
+	border-radius: 200px 0 0 0;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+.christmas-tree__item-two {
+	position: absolute;
+	top: 93px;
+	left: 2px;
+	width: 500px;
+	height: 40px;
+	/* z-index: 3; */
+	background-color: #39743a;
+	border-radius: 50% 0 0 50%;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+.christmas-tree__item-three {
+	position: absolute;
+	top: 136px;
+	left: 175px;
+	width: 500px;
+	height: 90px;
+	/* z-index: 3; */
+	background-color: #39743a;
+	transform: rotate(15deg) skew(-80deg);
+	border-radius: 0 0 0 200px;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+.christmas-tree__hemp {
+	position: absolute;
+	top: 95px;
+	left: 350px;
+	width: 50px;
+	height: 40px;
+	background-color: #493e39;
+	border-radius: 5px;
+}
+
+.christmas-tree__top {
+	position: absolute;
+	top: 92px;
+	left: -0px;
+	z-index: 4;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #f5d336;
+	animation: toy 5s linear 0s infinite;
+}
+
+@keyframes toy {
+	10% {
+		box-shadow: 0 0 25px 5px #fffb00;
+	}
+	55% {
+		box-shadow: 0 0 40px 10px #fffb00;
+	}
+	100% {
+		box-shadow: 0 0 10px 0 #fffb00;
+	}
+}
+
+/* __________________________________________________________CHRISTMAS TREE*/
+
+/* CHRISTMAS TREE ГІРЛНДА*/
+
+.dog-in-car__garland {
+	position: absolute;
+	top: 69px;
+	left: 165px;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+	z-index: 16;
+	transform: rotate(-12deg);
+}
+
+.wreath {
+	width: 330px;
+	height: 230px;
+}
+
+.wreath__row {
+	position: absolute;
+}
+
+.wreath__row_one {
+	top: 86px;
+	left: 10px;
+}
+
+.wreath__row_two {
+	top: 70px;
+	left: 50px;
+}
+
+.wreath__row_three {
+	top: 60px;
+	left: 95px;
+}
+
+.wreath__row_four {
+	top: 50px;
+	left: 140px;
+}
+
+.wreath__row_five {
+	top: 37px;
+	left: 185px;
+}
+
+.wreath__row_six {
+	top: 29px;
+	left: 225px;
+}
+
+.wreath__row_seven {
+	top: 18px;
+	left: 274px;
+}
+
+.wreath__item:not(:last-child) {
+	margin-bottom: 2px;
+}
+
+.wreath__item:nth-child(even) {
+	transform: translate(50%, 0);
+}
+
+.circle {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+}
+.circle_red {
+	background-color: #dc3129;
+	animation: reed 2s linear 0s infinite;
+}
+
+@keyframes reed {
+	10% {
+		background-color: #010ddc;
+		box-shadow: 0 0 15px 0 #000dff;
+	}
+	55% {
+		background-color: #f5d336;
+		box-shadow: 0 0 15px 0 #ffd000;
+	}
+	100% {
+		background-color: #dc3129;
+		box-shadow: 0 0 15px 0 #dc3129;
+	}
+}
+.circle_blue {
+	background-color: #010ddc;
+	animation: bluue 3s linear 0s infinite;
+}
+
+@keyframes bluue {
+	10% {
+		background-color: #f5d336;
+		box-shadow: 0 0 15px 0 #ffd000;
+	}
+	55% {
+		background-color: #dc3129;
+		box-shadow: 0 0 15px 0 #dc3129;
+	}
+	100% {
+		background-color: #010ddc;
+		box-shadow: 0 0 15px 0 #000dff;
+	}
+}
+.circle_yellow {
+	background-color: #f5d336;
+	animation: yell 1s linear 0s infinite;
+}
+
+@keyframes yell {
+	10% {
+		background-color: #dc3129;
+		box-shadow: 0 0 15px 0 #dc3129;
+	}
+	55% {
+		background-color: #010ddc;
+		box-shadow: 0 0 15px 0 #000dff;
+	}
+	100% {
+		background-color: #f5d336;
+		box-shadow: 0 0 15px 0 #ffd000;
+	}
+}
+
+/* ___________________________________________CHRISTMAS TREE ГІРЛНДА*/
+
+/* CAR DOG*/
+
+.dog-in-car__detail-car {
+	position: absolute;
+	top: 200px;
+	left: 0px;
+}
+
+.car-dog {
+	height: 375px;
+	width: 650px;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+/* HEAD*/
+.car-dog__top {
+	position: absolute;
+	top: 0;
+	left: 160px;
+	/* border: 2px solid #000; */
+}
+
+.head {
+	height: 170px;
+	width: 365px;
+	overflow: hidden;
+}
+
+.head__body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 25px solid #dc3129;
+	height: 350px;
+	width: 360px;
+}
+
+.head__window-one {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	/* border: 2px solid #000; */
+	border-right: 15px solid #dc3129;
+	border-bottom: 25px solid #dc3129;
+	border-radius: 0 0 15% 0;
+	height: 160px;
+	width: 140px;
+}
+
+.head__window-two {
+	position: absolute;
+	top: 0;
+	left: 135px;
+	overflow: hidden;
+	/* border: 2px solid #000; */
+	border-left: 15px solid #dc3129;
+	border-bottom: 25px solid #dc3129;
+	border-radius: 0% 0% 0 15%;
+	height: 160px;
+	width: 195px;
+}
+
+/* GIFTTTTTTTTT*/
+
+.head__gift-one {
+	position: absolute;
+	top: 105px;
+	left: 60px;
+	background-color: #1ecccf;
+	border: 5px solid #2d5398;
+	border-radius: 10px;
+	width: 90px;
+	height: 40px;
+	z-index: 2;
+	animation: gift-one 30s linear 30s 1 forwards;
+}
+
+@keyframes gift-one {
+	10% {
+		left: -3px;
+	}
+	15% {
+		left: -8px;
+	}
+	20% {
+		left: -12px;
+	}
+	30% {
+		left: -20px;
+	}
+	40% {
+		left: -25px;
+	}
+	50% {
+		left: -30px;
+	}
+	100% {
+		left: -40px;
+	}
+}
+
+.head__gift-one::before {
+	content: "";
+	position: absolute;
+	top: -28px;
+	left: 15px;
+	border: 7px solid #2d5398;
+	width: 25px;
+	height: 25px;
+	border-radius: 50% 50% 0 50%;
+}
+.head__gift-one::after {
+	content: "";
+	position: absolute;
+	top: -28px;
+	left: 35px;
+	border: 7px solid #2d5398;
+	width: 25px;
+	height: 25px;
+	border-radius: 50% 50% 50% 0;
+}
+
+.head__gift-two {
+	position: absolute;
+	top: 70px;
+	left: 50px;
+	background-color: #f5d336;
+	border: 10px solid #ca2b28;
+	border-radius: 10px;
+	width: 110px;
+	height: 80px;
+	animation: gift-two 30s linear 28.5s 1 forwards;
+}
+
+@keyframes gift-two {
+	10% {
+		left: -5px;
+	}
+	20% {
+		left: -10px;
+	}
+	30% {
+		left: -15px;
+	}
+	40% {
+		left: -20px;
+	}
+	60% {
+		left: -30px;
+	}
+	80% {
+		left: -40px;
+	}
+	100% {
+		left: -50px;
+	}
+}
+
+.head__gift-two::before {
+	content: "";
+	position: absolute;
+	top: -37px;
+	left: 11px;
+	border: 10px solid #ca2b28;
+	width: 35px;
+	height: 35px;
+	border-radius: 50% 50% 0 50%;
+}
+.head__gift-two::after {
+	content: "";
+	position: absolute;
+	top: -37px;
+	left: 38px;
+	border: 10px solid #ca2b28;
+	width: 35px;
+	height: 35px;
+	border-radius: 50% 50% 50% 0;
+}
+
+/* ----------------------------*/
+
+.head__helm {
+	position: absolute;
+	top: 115px;
+	left: 4px;
+	border: 8px solid #2c3632;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transform: rotate(0deg) skew(10deg);
+	animation: helm 10s linear infinite normal 0s;
+}
+
+@keyframes helm {
+	100% {
+		transform: rotate(-360deg) skew(10deg);
+	}
+}
+
+.head__helm::before {
+	content: "";
+	position: absolute;
+	top: -8px;
+	left: 16px;
+	background-color: #2c3632;
+	width: 5px;
+	height: 47px;
+	transform: rotate(-25deg);
+}
+
+.head__helm::after {
+	content: "";
+	position: absolute;
+	top: -8px;
+	left: 15.5px;
+	background-color: #2c3632;
+	width: 5px;
+	height: 47px;
+	transform: rotate(60deg);
+}
+
+/* DOGGGGGGGGGGGG*/
+.head__person {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.dog {
+	width: 190px;
+	height: 155px;
+	/* border: 2px solid #000; */
+}
+
+/* ШАПКА*/
+.dog__hat {
+	position: absolute;
+	top: 31px;
+	left: 70px;
+	transform: rotate(12deg);
+	z-index: 5;
+}
+
+.cap {
+	width: 45px;
+	height: 40px;
+	/* border: 2px solid #000; */
+}
+
+.cap__top {
+	background-color: #5f7bc3;
+	border: 3px solid #3e599b;
+	position: absolute;
+	top: 20px;
+	left: -5px;
+	width: 40px;
+	height: 15px;
+	border-radius: 5px;
+	z-index: 2;
+	transform: rotate(5deg);
+}
+
+.cap__middle {
+	background-color: #5f7bc3;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	width: 30px;
+	height: 25px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* ШАРФ*/
+.dog__clothes {
+	position: absolute;
+	top: 100px;
+	left: 55px;
+	transform: rotate(-15deg);
+	z-index: 3;
+}
+
+.scarf {
+	width: 45px;
+	height: 40px;
+	/* border: 2px solid #000; */
+}
+
+.scarf__horizontal {
+	background-color: #5f7bc3;
+	border: 3px solid #3e599b;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 15px;
+	border-radius: 5px;
+	z-index: 2;
+}
+
+.scarf__circle {
+	background-color: #5f7bc3;
+	border: 3px solid #3e599b;
+	position: absolute;
+	top: -1px;
+	left: 11px;
+	width: 19px;
+	height: 17px;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.scarf__vertical {
+	background-color: #5f7bc3;
+	border: 3px solid #3e599b;
+	position: absolute;
+	width: 10px;
+	height: 25px;
+	border-radius: 2px;
+	z-index: 1;
+}
+
+.scarf__vertical_one {
+	top: 4px;
+	left: 11px;
+	transform: rotate(20deg);
+}
+
+.scarf__vertical_two {
+	top: 4px;
+	left: 18px;
+	transform: rotate(-20deg);
+}
+
+.dog__head {
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	width: 100px;
+	height: 70px;
+	/* border: 2px solid #000; */
+}
+
+.dog__brow {
+	background-color: #9b6450;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	width: 37px;
+	height: 60px;
+	border-radius: 30px;
+	transform: rotate(15deg);
+	/* border: 2px solid #000; */
+}
+
+.dog__eyes {
+	background-color: #181b15;
+	position: absolute;
+	width: 6px;
+	height: 9px;
+	border-radius: 35px;
+	z-index: 4;
+}
+
+.dog__eyes_one {
+	transform: rotate(2deg);
+	top: 15px;
+	left: -0.5px;
+}
+
+.dog__eyes_two {
+	transform: rotate(2deg);
+	top: 14.5px;
+	left: 8.5px;
+}
+
+.dog__ear {
+	background: linear-gradient(to right, rgba(100, 52, 38, 0.8) 0%, rgba(19, 10, 7, 0) 81%, rgba(0, 0, 0, 0) 100%),
+		#9b6450;
+	border: 3px solid #643426;
+	position: absolute;
+	top: 3px;
+	left: 70px;
+	width: 23px;
+	height: 55px;
+	border-radius: 100px 0 50px 50px;
+	transform: rotate(-12deg);
+	z-index: 3;
+}
+
+.dog__nose {
+	background-color: #9b6450;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	width: 40px;
+	height: 60px;
+	border-radius: 30px;
+	transform: rotate(-78deg);
+	/* border: 2px solid #000; */
+}
+
+.dog__item-one {
+	background-color: #181b15;
+	position: absolute;
+	top: -3px;
+	left: 20px;
+	width: 17px;
+	height: 19px;
+	border-radius: 50% 5px 5px 50%;
+	transform: rotate(130deg);
+}
+
+.dog__item-two {
+	background-color: #181b15;
+	position: absolute;
+	top: 12px;
+	left: 8.5px;
+	width: 5px;
+	height: 12px;
+	border-radius: 10px;
+	transform: rotate(-40deg);
+}
+
+.dog__body {
+	position: absolute;
+	top: 100px;
+	left: 35px;
+	width: 100px;
+	height: 70px;
+	/* border: 2px solid #000; */
+	overflow: hidden;
+}
+.dog__bottom {
+	background-color: #9b6450;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	width: 70px;
+	height: 90px;
+	border-radius: 50px;
+	transform: rotate(-60deg);
+}
+
+/* КАПОТ HOOD*/
+
+.car-dog__before {
+	/* border: 2px solid #000; */
+	position: absolute;
+	top: 163px;
+	left: 50px;
+	z-index: 1;
+}
+
+.hood {
+	width: 250px;
+	height: 155px;
+	overflow: hidden;
+}
+
+.hood__item {
+	background-color: #dc3129;
+	width: 250px;
+	height: 280px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	/* border: 2px solid #000; */
+	z-index: 1;
+}
+
+.hood__headlight {
+	background-color: #ffd034;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	top: 35px;
+	left: 15px;
+}
+
+.hood__headlight::before {
+	content: "";
+	transform: translate(80%, 50%);
+	background-color: #ffe89d;
+	box-shadow: 0 0 10px 5px #ffe89d;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+/* BODY*/
+
+.car-dog__body {
+	background-color: #dc3129;
+	height: 150px;
+	width: 385px;
+	border-radius: 0 15px 0 0;
+	position: absolute;
+	top: 168px;
+	left: 150px;
+	z-index: 3;
+	border-bottom: 20px solid #ca2b28;
+}
+
+/* БАГАЖНИК TRUNK*/
+
+.car-dog__back {
+	/* border: 2px solid #000; */
+	position: absolute;
+	top: 163px;
+	left: 380px;
+	z-index: 1;
+}
+
+.trunk {
+	width: 250px;
+	height: 155px;
+	overflow: hidden;
+}
+
+.trunk__item {
+	background-color: #dc3129;
+	width: 230px;
+	height: 280px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	/* border: 2px solid #000; */
+}
+
+/* PLACE-WHEEL*/
+.car-dog__bottom {
+	position: absolute;
+	z-index: 6;
+	/* border: 2px solid #000; */
+}
+
+.car-dog__bottom_one {
+	top: 214px;
+	left: 30px;
+}
+
+.car-dog__bottom_two {
+	top: 214px;
+	left: 420px;
+}
+
+.place-wheel {
+	overflow: hidden;
+	width: 210px;
+	height: 112px;
+	/* border: 2px solid #000; */
+}
+
+.place-wheel__body {
+	/* border: 2px solid #000; */
+	width: 190px;
+	height: 105px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.place-wheel__item {
+	background-color: rgb(220, 49, 41);
+	box-shadow: inset 0 0 70px #000;
+	width: 190px;
+	height: 250px;
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: 9px;
+}
+
+.place-wheel__dugf {
+	width: 210px;
+	height: 250px;
+	border: 25px solid #ca2b28;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* WHEEL КОЛЕСО*/
+
+.car-dog__chassis {
+	position: absolute;
+	z-index: 7;
+	animation: wheel 4.5s linear infinite normal 0s;
+}
+
+@keyframes wheel {
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+.car-dog__chassis_one {
+	top: 250px;
+	left: 76px;
+}
+
+.car-dog__chassis_two {
+	top: 250px;
+	left: 467px;
+}
+
+.wheel {
+	width: 125px;
+	height: 125px;
+	/* border: 2px solid #000; */
+}
+
+.wheel__item {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	background-color: #666666;
+	border: 20px solid #2c3632;
+}
+
+.wheel__spoke {
+	width: 10px;
+	height: 105px;
+	position: absolute;
+	background-color: #2c3632;
+}
+
+.wheel__spoke_vertical {
+	top: 8px;
+	left: 55px;
+	/* background-color: #fff; */
+}
+
+.wheel__spoke_horizontal {
+	transform: rotate(90deg);
+	top: 8px;
+	left: 57px;
+	/* background-color: #fff; */
+}
+
+.wheel__spoke_diagonal-rights {
+	transform: rotate(133deg);
+	top: 8px;
+	left: 57px;
+	/* background-color: #fff; */
+}
+.wheel__spoke_diagonal-left {
+	transform: rotate(-133deg);
+	top: 8px;
+	left: 55px;
+	/* background-color: #fff; */
+}
+
+/* DOOR*/
+
+.car-dog__section {
+	position: absolute;
+	top: 174px;
+	left: 172px;
+	z-index: 5;
+}
+
+.door {
+	width: 155px;
+	height: 120px;
+	/* border: 2px solid #000; */
+}
+
+.door::after {
+	content: "";
+	width: 30px;
+	height: 12px;
+	background: linear-gradient(to bottom, rgba(124, 21, 21, 0.7) 0%, rgba(29, 5, 5, 0) 77%, rgba(0, 0, 0, 0) 100%),
+		#a91d1c;
+	border-radius: 5px;
+	position: absolute;
+	top: 10px;
+	left: 105px;
+}
+
+.door__body {
+	width: 150px;
+	height: 115px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	/* border: 2px solid #000; */
+	background-color: #ca2b28;
+	border-radius: 5px 5px 5px 0;
+}
+
+.door__item {
+	position: absolute;
+	top: 30px;
+	left: -125px;
+	background-color: #dc3129;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+/* ------------------------------ */
+
+/* BACKGROUND */
+
+.christmas__element-two {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.landscape {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #f2f8fa;
+}
+
+.landscape__row-one {
+	position: absolute;
+	top: 500px;
+	left: 0;
+	/* border: 2px solid #000; */
+	z-index: 8;
+}
+
+.storey-one {
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+}
+
+.storey-one__item {
+	position: absolute;
+	top: 85px;
+	left: -790px;
+	width: 3100px;
+	height: 1000px;
+	border-radius: 50%;
+	background-color: #eff7f9;
+	box-shadow: 0 0 30px 0 #acbbbb;
+}
+
+.landscape__row-two {
+	position: absolute;
+	top: 290px;
+	left: 0;
+	/* border: 2px solid #000; */
+	z-index: 6;
+}
+
+.storey-two {
+	width: 100%;
+	height: 420px;
+	overflow: hidden;
+}
+
+.storey-two__item {
+	position: absolute;
+	top: 80px;
+	left: -1100px;
+	width: 2600px;
+	height: 1000px;
+	border-radius: 50%;
+	background-color: #dceef2;
+	box-shadow: 0 0 40px 0 #acbbbb;
+}
+
+.landscape__row-three {
+	position: absolute;
+	top: 230px;
+	left: 0;
+	/* border: 2px solid rgb(173, 22, 22); */
+	z-index: 4;
+}
+
+.storey-three {
+	width: 100%;
+	height: 480px;
+	overflow: hidden;
+}
+
+.storey-three__item {
+	position: absolute;
+	top: 55px;
+	left: 100px;
+	width: 2600px;
+	height: 1000px;
+	border-radius: 50%;
+	background-color: #c1d4d8;
+	box-shadow: 0 0 20px 0 #acbbbb;
+}
+
+.landscape__row-four {
+	position: absolute;
+	top: 160px;
+	left: 0;
+	/* border: 2px solid rgb(22, 45, 173); */
+	z-index: 2;
+}
+
+.storey-four {
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+}
+
+.storey-four__item {
+	position: absolute;
+	top: 50px;
+	left: -800px;
+	width: 2600px;
+	height: 1000px;
+	border-radius: 50%;
+	background-color: #b5c8cc;
+	box-shadow: 0 0 20px 0 #acbbbb;
+}
+
+/* ------------------------------ */
+
+/* TREEEEEEEEEEE */
+.landscape__element {
+	position: absolute;
+}
+
+.landscape__element_one {
+	top: 280px;
+	left: 10px;
+	/* border: 2px solid rgb(22, 45, 173); */
+	z-index: 7;
+}
+.landscape__element_two {
+	top: 130px;
+	left: 1190px;
+	/* border: 2px solid rgb(22, 45, 173); */
+	z-index: 5;
+	transform: scale(0.6);
+}
+
+.landscape__element_three {
+	top: 70px;
+	left: 600px;
+	/* border: 2px solid rgb(22, 45, 173); */
+	z-index: 3;
+	transform: scale(0.4);
+}
+
+.landscape__element_four {
+	top: 0px;
+	left: 130px;
+	/* border: 2px solid rgb(22, 45, 173); */
+	z-index: 3;
+	transform: scale(0.2);
+	animation: tree-four 1s ease-in 16.5s 1 forwards;
+}
+
+@keyframes tree-four {
+	20% {
+		transform: scale(0.2) rotate(2deg);
+	}
+	40% {
+		transform: scale(0.2) rotate(-2deg);
+	}
+	60% {
+		transform: scale(0.2) rotate(2deg);
+	}
+	80% {
+		transform: scale(0.2) rotate(-2deg);
+	}
+	100% {
+		transform: scale(0.2) rotate(0deg);
+	}
+}
+
+.tree {
+	width: 300px;
+	height: 450px;
+	/* border: 2px solid rgb(22, 45, 173); */
+}
+
+.tree__item-one {
+	position: absolute;
+	top: 200px;
+	left: -10px;
+	width: 320px;
+	height: 230px;
+	border-radius: 50%;
+	/* border: 2px solid rgb(22, 45, 173); */
+	overflow: hidden;
+}
+
+.tree__stage-one {
+	position: absolute;
+	top: 30px;
+	left: 8px;
+	width: 300px;
+	height: 300px;
+	background-color: #527e7c;
+	border-radius: 5px 50% 50% 50%;
+	transform: rotate(45deg);
+}
+
+.tree__item-two {
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	width: 300px;
+	height: 210px;
+	border-radius: 50%;
+	/* border: 2px solid rgb(22, 45, 173); */
+	overflow: hidden;
+}
+
+.tree__stage-two {
+	position: absolute;
+	top: 65px;
+	left: 5px;
+	width: 280px;
+	height: 280px;
+	background-color: #4a9591;
+	border-radius: 5px 50% 50% 50%;
+	transform: rotate(45deg);
+}
+
+.tree__item-three {
+	position: absolute;
+	top: 60px;
+	left: 8px;
+	width: 280px;
+	height: 190px;
+	border-radius: 50%;
+	/* border: 2px solid rgb(22, 45, 173); */
+	overflow: hidden;
+}
+
+.tree__stage-three {
+	position: absolute;
+	top: 65px;
+	left: 7px;
+	width: 260px;
+	height: 260px;
+	background-color: #5eb9b5;
+	border-radius: 5px 50% 50% 50%;
+	transform: rotate(45deg);
+}
+
+.tree__item-four {
+	position: absolute;
+	top: 0px;
+	left: 18px;
+	width: 260px;
+	height: 170px;
+	border-radius: 50%;
+	/* border: 2px solid rgb(22, 45, 173); */
+	overflow: hidden;
+}
+
+.tree__stage-four {
+	position: absolute;
+	top: 60px;
+	left: 22px;
+	width: 210px;
+	height: 210px;
+	background-color: #81c5bf;
+	border-radius: 5px 50% 50% 50%;
+	transform: rotate(45deg);
+}
+
+/* ------------------------------ */
+
+/* ЗАЄЦЬ */
+.landscape__animal {
+	position: absolute;
+}
+
+/* ЗАЄЦЬ-САЛЮТ */
+
+.hare__pyrotechnics {
+	position: absolute;
+	top: 110px;
+	left: 40px;
+	z-index: 10;
+	transform: rotate(-60deg);
+	animation: salute 1s linear 36s 1 forwards;
+}
+
+@keyframes salute {
+	100% {
+		top: 80px;
+		left: -20px;
+		transform: rotate(-15deg);
+	}
+}
+
+.salute {
+	width: 20px;
+	height: 60px;
+	border-radius: 5px;
+	background-color: #ca2b28;
+	border: 3px solid #f5d336;
+	border-top: 15px solid #f5d336;
+}
+
+.salute__row {
+	position: absolute;
+	opacity: 0;
+}
+
+.salute__row_one {
+	top: 0px;
+	left: 0;
+	animation: salute-row-one 7s linear 37s 1 forwards;
+}
+
+@keyframes salute-row-one {
+	5% {
+		opacity: 1;
+	}
+	15% {
+		top: -300px;
+		left: -100px;
+		opacity: 1;
+	}
+	100% {
+		/* top: 90px; */
+		left: -250px;
+		opacity: 1;
+	}
+}
+
+.salute__row_two .salute__circle_red,
+.salute__row_four .salute__circle_red {
+	animation: salute-red-even 7s linear 37s 1 forwards;
+}
+
+.salute__row_one .salute__circle_red,
+.salute__row_three .salute__circle_red {
+	animation: salute-red-odd 7s linear 37s 1 forwards;
+}
+
+@keyframes salute-red-even {
+	10% {
+		left: 0px;
+		top: 0px;
+	}
+	45% {
+		left: -100px;
+		top: -80px;
+	}
+	50% {
+		left: -100px;
+	}
+	100% {
+		left: -100px;
+	}
+}
+
+@keyframes salute-red-odd {
+	10% {
+		left: 0px;
+		top: 0px;
+	}
+	45% {
+		left: 100px;
+		top: -80px;
+	}
+	50% {
+		left: 100px;
+	}
+	100% {
+		left: 120px;
+	}
+}
+
+.salute__row_two .salute__circle_blue,
+.salute__row_four .salute__circle_blue {
+	animation: salute-blue-even 7s ease-in 37s 1 forwards;
+}
+
+.salute__row_one .salute__circle_blue,
+.salute__row_three .salute__circle_blue {
+	animation: salute-blue-odd 7s ease-in-out 37s 1 forwards;
+}
+
+@keyframes salute-blue-even {
+	10% {
+		left: 0px;
+		top: 0px;
+	}
+	45% {
+		left: -60px;
+		top: -60px;
+	}
+	50% {
+		left: -60px;
+	}
+	100% {
+		left: -30px;
+	}
+}
+
+@keyframes salute-blue-odd {
+	10% {
+		left: 0px;
+		top: 0px;
+	}
+	45% {
+		left: 50px;
+		top: -60px;
+	}
+	50% {
+		left: 50px;
+	}
+	100% {
+		left: 60px;
+	}
+}
+.salute__row_two {
+	top: 0px;
+	left: 0;
+	animation: salute-row-two 7s linear 37.3s 1 forwards;
+}
+
+@keyframes salute-row-two {
+	5% {
+		opacity: 1;
+	}
+	15% {
+		top: -320px;
+		left: -50px;
+		opacity: 1;
+	}
+	100% {
+		/* top: 90px; */
+		left: -250px;
+		opacity: 1;
+	}
+}
+.salute__row_three {
+	top: 0px;
+	left: 0;
+	animation: salute-row-three 7s linear 37.6s 1 forwards;
+}
+
+@keyframes salute-row-three {
+	5% {
+		opacity: 1;
+	}
+	15% {
+		top: -290px;
+		left: -80px;
+		opacity: 1;
+	}
+	100% {
+		/* top: 90px; */
+		left: -250px;
+		opacity: 1;
+	}
+}
+.salute__row_four {
+	top: 0px;
+	left: 0;
+	animation: salute-row-four 7s linear 37.9s 1 forwards;
+}
+
+@keyframes salute-row-four {
+	5% {
+		opacity: 1;
+	}
+	15% {
+		top: -340px;
+		left: -20px;
+		opacity: 1;
+	}
+
+	100% {
+		/* top: 90px; */
+		left: -250px;
+		opacity: 1;
+	}
+}
+
+.salute__circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.salute__circle_red {
+	background-color: #dc3129;
+}
+
+.salute__circle_blue {
+	background-color: #2d5398;
+}
+
+.salute__circle_yellow {
+	background-color: #f5d336;
+}
+
+/* ______________________________________________САЛЮТ */
+
+.landscape__animal_one {
+	top: 250px;
+	left: 1245px;
+	z-index: 4;
+	transform: scale(0.8) rotate(15deg);
+	transform-origin: bottom;
+	animation: animal-one 1s ease-in 35s 1 forwards;
+}
+
+@keyframes animal-one {
+	100% {
+		transform: scale(0.8) rotate(-11deg);
+	}
+}
+
+.landscape__animal_one .hare__hand_one {
+	left: -34px;
+	transform: rotate(-150deg);
+	animation: one-hand-one 1s linear 36s 1 forwards;
+}
+
+@keyframes one-hand-one {
+	100% {
+		transform: rotate(-35deg);
+	}
+}
+
+.landscape__animal_two {
+	top: 658px;
+	left: 200px;
+	z-index: 7;
+	transform-origin: bottom;
+	animation: animal-two 9.5s ease-in 6s 1 forwards;
+}
+
+@keyframes animal-two {
+	5% {
+		top: 560px;
+	}
+	35% {
+		top: 560px;
+	}
+	40% {
+		top: 470px;
+	}
+	95% {
+		top: 470px;
+	}
+	100% {
+		top: 660px;
+	}
+}
+
+.landscape__animal_two .hare__hand_two {
+	transform: rotate(60deg);
+	animation: two-hand-two 3s linear 9s 2 alternate forwards;
+}
+
+@keyframes two-hand-two {
+	25% {
+		transform: rotate(-30deg);
+	}
+	50% {
+		transform: rotate(-55deg);
+	}
+	75% {
+		transform: rotate(-30deg);
+	}
+	100% {
+		transform: rotate(-55deg);
+	}
+}
+
+.landscape__animal_three {
+	top: 60px;
+	left: 265px;
+	z-index: 2;
+	transform: scale(0.3) rotate(-13deg);
+	transform-origin: bottom;
+	animation: animal-three 5s ease-in 18s 1 forwards;
+}
+
+@keyframes animal-three {
+	10% {
+		transform: scale(0.3) rotate(13deg);
+	}
+	96% {
+		transform: scale(0.3) rotate(13deg);
+	}
+	100% {
+		transform: scale(0.3) rotate(-13deg);
+	}
+}
+
+.landscape__animal_three .hare__hand_two {
+	transform: rotate(60deg);
+}
+
+.hare {
+	height: 200px;
+	width: 65px;
+	/* border: 2px solid rgb(22, 45, 173); */
+}
+
+.hare__ear {
+	position: absolute;
+	width: 16px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #8f8f8f;
+}
+
+.hare__ear::before {
+	content: "";
+	width: 8px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #4e4e4e;
+	transform: translate(50%, 25%);
+	position: absolute;
+}
+
+.hare__ear_one {
+	top: 5px;
+	left: 12px;
+	transform: rotate(-8deg);
+}
+.hare__ear_two {
+	top: 5px;
+	left: 31px;
+	transform: rotate(8deg);
+}
+
+.hare__head {
+	position: absolute;
+	top: 50px;
+	left: 8px;
+	width: 45px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #8f8f8f;
+	z-index: 2;
+}
+
+.hare__eye {
+	position: absolute;
+	background-color: #181b15;
+	width: 8px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.hare__eye_one {
+	top: 14px;
+	left: 10px;
+}
+
+.hare__eye_two {
+	top: 14px;
+	left: 25px;
+}
+
+.hare__nose {
+	position: absolute;
+	top: 24px;
+	left: 16.5px;
+	width: 10px;
+	height: 10px;
+	background-color: #181b15;
+	border-radius: 50% 50% 0 50%;
+	transform: rotate(43deg);
+}
+
+.hare__body {
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	width: 60px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #8f8f8f;
+	/* border: 2px solid rgb(22, 45, 173); */
+}
+
+.hare__hand {
+	border: 2px solid #4e4e4e;
+	position: absolute;
+	width: 45px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #8f8f8f;
+}
+
+.hare__hand_one {
+	top: 6px;
+	left: -29px;
+	transform: rotate(-60deg);
+	transform-origin: 100% 50%;
+}
+
+.hare__hand_two {
+	top: 6px;
+	left: 45px;
+	transform: rotate(60deg);
+	transform-origin: 0% 50%;
+}
+
+.hare__clothes {
+	position: absolute;
+	top: 93px;
+	left: 10px;
+	z-index: 3;
+}
+
+.scarf__horizontal_color {
+	background-color: #dc3129;
+	border: 3px solid #a91d1c;
+}
+
+.scarf__circle_color {
+	background-color: #dc3129;
+	border: 3px solid #a91d1c;
+}
+
+.scarf__vertical_one-color {
+	background-color: #dc3129;
+	border: 3px solid #a91d1c;
+	top: 4px;
+	left: 11px;
+	transform: rotate(20deg);
+}
+
+.scarf__vertical_two-color {
+	background-color: #dc3129;
+	border: 3px solid #a91d1c;
+	top: 4px;
+	left: 18px;
+	transform: rotate(-20deg);
+}
+
+/* ------------------------------ */
+
+/* ЗАНАВЕССССССССССССССС */
+
+.christmas__element-three {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 150;
+	opacity: 0;
+	animation: curtain 3s linear 42s 1 forwards;
+}
+
+@keyframes curtain {
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.curtain {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #a3d8dc;
+}
+
+.christmas__element-four {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 155;
+	opacity: 0;
+	animation: congratulation 5s linear 45s 1 forwards;
+}
+
+@keyframes congratulation {
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.congratulation__text {
+	position: absolute;
+	transform: translate(50%, 50%);
+	text-align: center;
+	font-size: 130px;
+	font-weight: 900;
+	color: #dc3129;
+	text-transform: uppercase;
+	line-height: 120%;
+}
+
+/* ------------------------------ */
+
+/* СНЕГГГГГГГГГГГГГГ */
+
+.christmas__element-five {
+	position: absolute;
+	z-index: 100;
+	top: -820px;
+	left: 0;
+	animation: snow 90s linear infinite alternate;
+}
+
+@keyframes snow {
+	100% {
+		top: 800px;
+	}
+}
+
+.snow {
+	width: 100%;
+}
+
+.snow__row {
+	text-align: center;
+}
+
+.snow__row:not(:last-child) {
+	margin-bottom: 150px;
+}
+
+.snow__circle {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.snow__circle:not(:last-child) {
+	margin-right: 27px;
+}
+.snow__row_one .snow__circle:nth-child(even) {
+	transform: translate(0, 1000%) scale(1.2);
+	animation: snow-row-one 10s linear infinite alternate;
+}
+
+@keyframes snow-row-one {
+	50% {
+		transform: translate(1000%, 1000%) scale(1.2);
+	}
+	100% {
+		transform: translate(-1000%, 1000%) scale(1.2);
+	}
+}
+
+.snow__row_two .snow__circle:nth-child(even) {
+	transform: translate(0, 1000%) scale(1.3);
+	animation: snow-row-two 10s linear infinite alternate;
+}
+@keyframes snow-row-two {
+	50% {
+		transform: translate(-1000%, 1000%) scale(1.3);
+	}
+	100% {
+		transform: translate(1000%, 1000%) scale(1.3);
+	}
+}
+.snow__row_three .snow__circle:nth-child(even) {
+	transform: translate(0, 1000%) scale(1.4);
+	animation: snow-row-three 10s linear infinite alternate;
+}
+@keyframes snow-row-three {
+	50% {
+		transform: translate(1000%, 1000%) scale(1.4);
+	}
+	100% {
+		transform: translate(-1000%, 1000%) scale(1.4);
+	}
+}
+.snow__row_four .snow__circle:nth-child(even) {
+	transform: translate(0, 1000%) scale(1.2);
+	animation: snow-row-four 10s linear infinite alternate;
+}
+
+@keyframes snow-row-four {
+	50% {
+		transform: translate(-1000%, 1000%) scale(1.4);
+	}
+	100% {
+		transform: translate(1000%, 1000%) scale(1.4);
+	}
+}
+.snow__row_five .snow__circle:nth-child(even) {
+	transform: translate(0, 1000%) scale(1.3);
+	animation: snow-row-five 10s linear infinite alternate;
+}
+
+@keyframes snow-row-five {
+	50% {
+		transform: translate(1000%, 1000%) scale(1.4);
+	}
+	100% {
+		transform: translate(-1000%, 1000%) scale(1.4);
+	}
+}
+
+.snow__row_six .snow__circle:nth-child(even) {
+	transform: translate(0, 1000%) scale(1.4);
+	animation: snow-row-six 10s linear infinite alternate;
+}
+
+@keyframes snow-row-six {
+	50% {
+		transform: translate(-1000%, 1000%) scale(1.4);
+	}
+	50% {
+		transform: translate(1000%, 1000%) scale(1.4);
+	}
+}
+
+/* CLOUDSSSSSSSSSSSSSS */
+
+.christmas__element-six {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 102;
+	width: 100%;
+	/* border: 2px solid rgb(22, 45, 173); */
+}
+
+.clouds {
+	height: 200px;
+}
+
+.clouds__item {
+	position: absolute;
+	width: 400px;
+	height: 200px;
+}
+
+.clouds__item_one {
+	top: -170px;
+	left: -30px;
+	animation: cloud-one 25s ease-in-out 0s alternate infinite;
+}
+
+@keyframes cloud-one {
+	25% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+	}
+	75% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+.clouds__item_two {
+	top: -160px;
+	left: 350px;
+	animation: cloud-two 20s ease-in-out 0s alternate infinite;
+}
+
+@keyframes cloud-two {
+	50% {
+		transform: rotate(12deg);
+	}
+	100% {
+		transform: rotate(-12deg);
+	}
+}
+.clouds__item_three {
+	top: -160px;
+	left: 750px;
+	animation: cloud-three 25s ease-in-out 0s alternate infinite;
+}
+@keyframes cloud-three {
+	25% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+	}
+	75% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+.clouds__item_four {
+	top: -170px;
+	left: 1180px;
+	transform: rotate(-20deg);
+	animation: cloud-four 18s ease-in-out 0s alternate infinite;
+}
+@keyframes cloud-four {
+	50% {
+		transform: rotate(12deg);
+	}
+	100% {
+		transform: rotate(-12deg);
+	}
+}
+
+.clouds__body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #a3d8dc;
+	border-radius: 50%;
+	width: 400px;
+	height: 250px;
+}
+
+.clouds__circle {
+	position: absolute;
+	background-color: #a3d8dc;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	/* border: 2px solid rgb(22, 45, 173); */
+}
+
+.clouds__circle_one {
+	top: 125px;
+	left: 90px;
+}
+
+.clouds__circle_two {
+	top: 120px;
+	left: 195px;
+}
+
+.clouds__circle_three {
+	top: 60px;
+	left: 280px;
+}
+
+.clouds__circle_four {
+	top: 90px;
+	left: 0px;
+}
+
+.clouds__circle_five {
+	top: 35px;
+	left: -40px;
+}
